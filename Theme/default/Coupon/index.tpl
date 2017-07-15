@@ -2,9 +2,6 @@
 <link rel="stylesheet" type="text/css" href="{$smarty.const.ORG}swiper/swiper-3.4.2.min.css">
 <link rel="stylesheet" type="text/css" href="{$smarty.const.THEME}assets/css/coupon.css">
 <div class='container'>
-	<div class='banner'>
-		<img src="{$smarty.const.THEME}assets/img/banner.png">
-	</div>
 	<form action='javascript:search();' method='GET'>
 		<div class='search'>
 			<div class='search_input'>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2017-07-04 11:32:51
+<?php /* Smarty version Smarty-3.1.6, created on 2017-07-15 15:49:26
          compiled from "./Theme/default\Coupon\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:286785939283416d523-87111741%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '5832229222fd0c74e0e07c652f2b28414fbfec97' => 
     array (
       0 => './Theme/default\\Coupon\\index.tpl',
-      1 => 1499138822,
+      1 => 1500104964,
       2 => 'file',
     ),
   ),
@@ -35,10 +35,6 @@ swiper/swiper-3.4.2.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo @THEME;?>
 assets/css/coupon.css">
 <div class='container'>
-	<div class='banner'>
-		<img src="<?php echo @THEME;?>
-assets/img/banner.png">
-	</div>
 	<form action='javascript:search();' method='GET'>
 		<div class='search'>
 			<div class='search_input'>

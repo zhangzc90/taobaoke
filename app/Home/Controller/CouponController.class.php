@@ -2,21 +2,8 @@
 	namespace Home\Controller;
 	use Think\Controller;
 	class CouponController extends BaseController{
-		private $pid;
 		public function __construct(){
 			parent::__construct();
-			$uid=I('GET.uid');
-			$this->pid=$this->get_pid($uid);
-			$this->assign('uid',$uid);
-		}
-		// 获取用户PID
-		private function get_pid($uid){
-			$model=M('tao_users');
-			$res=$model->where(array('uid'=>$uid,'enable'=>1))->find();
-			if($res)
-				return $res['pid'];
-			else
-				return null;
 		}
 
 		// 首次获取数据
