@@ -1,0 +1,44 @@
+[ 2017-06-22T15:38:13+08:00 ] 127.0.0.1 /taobaoke/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0066s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-22' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.232855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.233118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002974s ]
+
+[ 2017-06-22T15:38:20+08:00 ] 127.0.0.1 /taobaoke/coupon/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002143s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0033s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.237337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.237604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+

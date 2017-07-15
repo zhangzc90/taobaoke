@@ -1,0 +1,345 @@
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime(): stat failed for ./app/Runtime/Cache\fdb8a6cd852eda74cccf5e068fe90d116ba710d4.file.index.tpl.php D:\wamp64\www\Demo\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./app/Runtime/Cache\fdb8a6cd852eda74cccf5e068fe90d116ba710d4.file.index.tpl.php): No such file or directory D:\wamp64\www\Demo\ThinkPHP\Library\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.838277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.838547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001806s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001973s ]
+ERR: 无法加载控制器:Assets
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/css/over.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003499s ]
+ERR: 无法加载控制器:Assets
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/js/jquery-2.1.0.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+ERR: 无法加载控制器:Assets
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/js/jquery.flexslider-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+ERR: 无法加载控制器:Assets
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/oyster-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/mint-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/scout-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001203s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/dd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001209s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/notary.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001223s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/mtv-rma-3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/snow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/80s.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/balls.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001516s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/90s.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001256s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/deept.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001423s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/elcom-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw-id-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025487s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/alien.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005683s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/go-green.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/go-hard.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001442s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/ktm.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/mtv-rma-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/n-panorama.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001673s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/futuremap.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002284s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/macdev.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001246s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/oblako-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004426s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/perevodim-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001889s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/startwish.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001354s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/taste-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018817s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw-banner-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw-cp2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000245s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002158s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw-cp-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001221s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw-wm2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001893s ]
+
+
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/unlim-1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001266s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/prostor-2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002081s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24-2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001359s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/teplocenter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24-5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001218s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24-7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001296s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24-8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24-9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw-new.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24-4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+
+[ 2017-05-11T10:14:12+08:00 ] 127.0.0.1 /Demo/assets/img/tw24-6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002506s ]
+
+[ 2017-05-11T10:14:13+08:00 ] 127.0.0.1 /Demo/assets/js/jquery.flexslider-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001758s ]
+ERR: 无法加载控制器:Assets
+
+[ 2017-05-11T10:15:10+08:00 ] 127.0.0.1 /Demo/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `w_post` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: join D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 49 行.
+SQL: SELECT w_post.ID as id,`post_date`,`post_title`,`post_thumbnail`,`post_describe`,`post_seqencing`,`user_nickname`,`post_status`,w_users.ID as userid FROM `w_post` INNER JOIN w_users on w_users.ID=w_post.post_author  WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' ORDER BY post_seqencing desc,post_date desc LIMIT 0,5   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_post` WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `w_term_relationship` [ RunTime:0.0041s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '66' AND `tag_or_category` = 'category'  [ RunTime:0.0033s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '66' AND `tag_or_category` = 'tag'  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '65' AND `tag_or_category` = 'category'  [ RunTime:0.0008s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '65' AND `tag_or_category` = 'tag'  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '60' AND `tag_or_category` = 'category'  [ RunTime:0.0008s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '60' AND `tag_or_category` = 'tag'  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '53' AND `tag_or_category` = 'category'  [ RunTime:0.0005s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '53' AND `tag_or_category` = 'tag'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `w_term` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_term` WHERE `term_taxonomy` = 'category'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `w_term` WHERE `term_taxonomy` = 'post_tag'  [ RunTime:0.0003s ]
+ERR: 模板不存在:./Theme/default/News/index.tpl
+
+[ 2017-05-11T10:35:02+08:00 ] 127.0.0.1 /Demo/news
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001472s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `w_post` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: join D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 49 行.
+SQL: SELECT w_post.ID as id,`post_date`,`post_title`,`post_thumbnail`,`post_describe`,`post_seqencing`,`user_nickname`,`post_status`,w_users.ID as userid FROM `w_post` INNER JOIN w_users on w_users.ID=w_post.post_author  WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' ORDER BY post_seqencing desc,post_date desc LIMIT 0,5   [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_post` WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `w_term_relationship` [ RunTime:0.0030s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '66' AND `tag_or_category` = 'category'  [ RunTime:0.0026s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '66' AND `tag_or_category` = 'tag'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '65' AND `tag_or_category` = 'category'  [ RunTime:0.0006s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '65' AND `tag_or_category` = 'tag'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '60' AND `tag_or_category` = 'category'  [ RunTime:0.0005s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '60' AND `tag_or_category` = 'tag'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\Demo\app\Home\Controller\NewsController.class.php 第 78 行.
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '53' AND `tag_or_category` = 'category'  [ RunTime:0.0005s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '53' AND `tag_or_category` = 'tag'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `w_term` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_term` WHERE `term_taxonomy` = 'category'  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `w_term` WHERE `term_taxonomy` = 'post_tag'  [ RunTime:0.0004s ]
+ERR: 模板不存在:./Theme/default/News/index.tpl
+

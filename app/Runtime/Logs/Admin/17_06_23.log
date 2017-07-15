@@ -1,0 +1,377 @@
+[ 2017-06-23T16:34:45+08:00 ] 192.168.120.81 /taobaoke/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006550s ]
+
+[ 2017-06-23T16:34:48+08:00 ] 192.168.120.81 /taobaoke/admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002408s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2017-06-23T16:34:51+08:00 ] 192.168.120.81 /taobaoke/admin/index/login_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002568s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `w_users` WHERE ( user_login="admin" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0053s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`user_id`,`login_time`,`login_ip`,`login_referer`) VALUES ('1','1498206891','192.168.120.81','http://192.168.120.81/taobaoke/admin/index/login.html') [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2017-06-23T16:34:51+08:00 ] 192.168.120.81 /taobaoke/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003701s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `w_pages` [ RunTime:0.0015s ]
+SQL: SELECT `user_nickname`,`page_id`,`page_title`,`page_time` FROM `w_pages` INNER JOIN w_users on w_users.ID=w_pages.page_author  WHERE `page_status` = 'open' AND `w_user_level` <= '10' ORDER BY page_time desc LIMIT 0,5   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_pages` WHERE `page_status` = 'open' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `w_post` [ RunTime:0.0018s ]
+SQL: SELECT w_post.ID as id,`post_date`,`post_title`,`user_nickname`,`post_status` FROM `w_post` INNER JOIN w_users on w_users.ID=w_post.post_author  WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' ORDER BY post_date desc LIMIT 0,5   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_post` WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0013s ]
+SQL: SELECT w_logs.*,user_nickname as name FROM `w_logs` LEFT JOIN w_users on w_users.ID=w_logs.user_id  ORDER BY login_time desc LIMIT 0,5   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003748s ]
+
+[ 2017-06-23T16:34:57+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/utao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+ERR: 非法操作:utao_new
+
+[ 2017-06-23T16:35:03+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.160891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003712s ]
+
+[ 2017-06-23T16:40:21+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002224s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.219064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.219353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001666s ]
+
+[ 2017-06-23T16:41:20+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002639s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.203609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.204534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002050s ]
+
+[ 2017-06-23T16:45:37+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001744s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002014s ]
+
+[ 2017-06-23T16:45:44+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001824s ]
+
+[ 2017-06-23T16:47:51+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002320s ]
+
+[ 2017-06-23T16:48:27+08:00 ] 192.168.120.81 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+
+[ 2017-06-23T16:48:30+08:00 ] 192.168.120.81 /taobaoke/admin/tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002468s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002105s ]
+
+[ 2017-06-23T16:48:39+08:00 ] 192.168.120.81 /taobaoke/admin/tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001980s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+
+[ 2017-06-23T16:48:42+08:00 ] 192.168.120.81 /taobaoke/admin/tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001980s ]
+
+[ 2017-06-23T17:03:13+08:00 ] 192.168.120.81 /taobaoke/admin/tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002505s ]
+
+[ 2017-06-23T17:08:29+08:00 ] 192.168.120.81 /taobaoke/admin/tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002501s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002680s ]
+
+[ 2017-06-23T17:08:46+08:00 ] 192.168.120.81 /taobaoke/admin/tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','552764768190','MIUCO女装2017夏季新款重工刺绣蕾丝V领高腰显高显瘦阔腿连体短裤','http://img.alicdn.com/bao/uploaded/i3/TB1FK5RRFXXXXaxXXXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=552764768190','MIUCO专注高品质快时尚女装','258','113','7','18.06','圣水无痕','https://s.click.taobao.com/4ns9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DRm772Qe3zXccQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb0gdk%2BGERKnc43ZTvCW0Qqo4I7D2%2BLRRixqI5GyuVsJ7xg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥wH81Zyghl1a￥','100000','96673','满6元减5元','2017-06-22','2017-07-31','https://uland.taobao.com/coupon/edetail?e=QL%2BxVSDQJ5sN%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH5T2OiICI9KVz0ewX3ZDw7lUYUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCPXBKqe6HDQg&pid=mm_122550059_24984173_84538878&af=1','￥PpleZyghPYV￥','https://s.click.taobao.com/3bw9chw','否',NULL,'2') [ RunTime:0.0053s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','552018787728','【格言】十木米原创2017夏新款旅行文艺亚麻蓝格子七分裤休闲女裤','http://img.alicdn.com/bao/uploaded/i4/644759459/TB2K4KwrbXlpuFjy1zbXXb_qpXa_!!644759459.jpg','http://item.taobao.com/item.htm?id=552018787728','十木米原创旅行服饰','238','166','5','11.9','大小姐201012','https://s.click.taobao.com/Got9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3Dk9ncoA5rTcccQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb%2B8vGKTHp9uC9mJG2sUkcC9nMOTcy3UdrNeHRFLW0XQFxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥ebrAZyghjYn￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0034s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','545305059036','两三事梵高正版授权彩调新咏2017春季新款衬衫女长袖开衫中长款','http://img.alicdn.com/bao/uploaded/i2/TB1hnu4PVXXXXcSXpXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=545305059036','两三事旗舰店','529','164','5.5','29.1','两三事旗舰店','https://s.click.taobao.com/9Sp9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DmtqhjyyPyLccQipKwQzePOeEDrYVVa64K7Vc7tFgwiHjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfbxaEu6FOUyiRjwkmPJ6vE%2F3R4d%2BlNS0NtYa%2F9Y83p6DUxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥n8uNZyghk0f￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','549130096805','MG小象t恤女装夏2017新款宽松韩版chic百搭半袖喇叭袖小心机上衣','http://img.alicdn.com/bao/uploaded/i1/479184430/TB2EBPgo0FopuFjSZFHXXbSlXXa_!!479184430.jpg','http://item.taobao.com/item.htm?id=549130096805','MG小象欧美街拍时尚女装','69','15984','5','3.45','毛菇小象','https://s.click.taobao.com/5Rn9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DDCgzSxLkiHEcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb3%2BQ4J9Jj3mW9N4yPmY5SymCZJ12UmuS%2B5jps7sjzEtkxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥zPxWZyghjYu￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0032s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','552239649612','花间裳/七月与安生/原创修身气质显瘦绣花雪纺连衣裙女夏套裙新','http://img.alicdn.com/bao/uploaded/i1/642826369/TB2Pod4vdFopuFjSZFHXXbSlXXa_!!642826369.jpg','http://item.taobao.com/item.htm?id=552239649612','花间裳','318','200','14','44.52','alexww1','https://s.click.taobao.com/Iqv9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DfNaUUV%2FUMfEcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb9cpSvk%2B72vK9mJG2sUkcC98NdZlnTP1qMDBtRneB7Ztxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥4ayPZygh8Fc￥','5000','1185','满299元减10元','2017-06-14','2017-06-30','https://uland.taobao.com/coupon/edetail?e=rhgbqIMpJLwN%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH5Go%2BhBmr5McFURkp71CoMJUYUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCPXBKqe6HDQg&pid=mm_122550059_24984173_84538878&af=1','￥E32iZygh9OB￥','https://s.click.taobao.com/N5w9chw','否',NULL,'2') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','546766645986','麻霖文艺原创棉麻女装2017夏季新款手工刺绣中长款苎麻连衣裙开叉','http://img.alicdn.com/bao/uploaded/i4/517453675/TB282nAhM0kpuFjSspdXXX4YXXa_!!517453675.jpg','http://item.taobao.com/item.htm?id=546766645986','麻霖文艺态度棉麻女装','399','61','5','19.95','黄俊慧5274','https://s.click.taobao.com/eMv9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DAsLa2vOCW1ccQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb5yMqOE%2FXLFBDOh0Sxiix%2FQl%2BCrlTbbFtlrkjcw4FZ90xg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥hD0kZyghQmV￥','30000','19310','满399元减10元','2017-06-08','2017-06-27','https://uland.taobao.com/coupon/edetail?e=%2FirgjkJ8dl0N%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH5W2Aq4cEkZEEjQBDUJjP8zEYUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCPXBKqe6HDQg&pid=mm_122550059_24984173_84538878&af=1','￥MzKxZyghPF9￥','https://s.click.taobao.com/0ns9chw','否',NULL,'2') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','549967047347','小虫 浪漫百褶 飘逸柔滑 花边松紧腰阔腿裙裤长裤TE7XK7005','http://img.alicdn.com/bao/uploaded/i2/12375520/TB2TN9nr9BjpuFjy1XdXXaooVXa_!!12375520.jpg','http://item.taobao.com/item.htm?id=549967047347','小虫XIAOCHONG','550','343','15','82.5','小虫米子','https://s.click.taobao.com/sTq9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DGOONLawJzWIcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb7p90tfrrDjFTgEJzapBiloq4fndDPTZiCNsKE2gm8FYxiXvDf8DaRs%3D&pvid=11_117.158.25.204_4823_1498208866215','￥mDoeZyghl1R￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','552096376559','2017夏季新款网纱刺绣仙女气质修身显瘦V领小心机连衣裙女长裙子','http://img.alicdn.com/bao/uploaded/i1/924187981/TB2qbtHrY8kpuFjy0FcXXaUhpXa_!!924187981.jpg','http://item.taobao.com/item.htm?id=552096376559','小柚子定制','178','154','7','12.46','请叫我小九妹','https://s.click.taobao.com/xaw9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3D3rqEjKOEJDkcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb%2FwYrq8a5sz9ouj4Z5hlae6UK%2F2WY45uPRwwKw75VnZxxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥9LwdZyghj62￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0034s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','550141241313','A7SEVEN 夏季韩版宽松显瘦棉麻喇叭袖套头衬衫女休闲娃娃衫上衣潮','http://img.alicdn.com/bao/uploaded/i3/883696985/TB251h7pgNlpuFjy0FfXXX3CpXa_!!883696985.jpg','http://item.taobao.com/item.htm?id=550141241313','A7 SEVEN 定制女装','69','513','11','7.59','小川club','https://s.click.taobao.com/Urx9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DkLcUAUUqFjscQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfbwpqZFapjcz9DOh0Sxiix%2FSGy1ua8usj9POExkS%2BdAq9xg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥nX66ZyghPFM￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','549802228314','M Queen独立制衣 夏装新款荷叶袖性感吊带露肩开叉长裙连衣裙8188','http://img.alicdn.com/bao/uploaded/i4/35612257/TB2zhyFub4npuFjSZFmXXXl4FXa_!!35612257.jpg','http://item.taobao.com/item.htm?id=549802228314','M Queen 独立制衣','172','923','16','27.52','wildjtl','https://s.click.taobao.com/B5x9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DAEAjpdmaXfQcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb4XnFRjex8yTTgEJzapBilrFc1vE9C2zVhvN8jNZ2JkVxiXvDf8DaRs%3D&pvid=11_117.158.25.204_4823_1498208866215','￥4Wx5ZyghPNt￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0041s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','548623316886','原创设计师泰国OL小香风蝴蝶结夜店黑色显瘦a字连衣裙夏装小黑裙','http://img.alicdn.com/bao/uploaded/i4/TB1YsGcQFXXXXXVaXXXYXGcGpXX_M2.SS2','http://item.taobao.com/item.htm?id=548623316886','Bellavintage原创设计复古美衣','188.79','240','18.1','34.17','bellavintage','https://s.click.taobao.com/gFs9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DO9TiVk5DLUkcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfbwWFObuhiOiFImwFZhLv9rp2N7kg%2B2rFmV1xVvAvJRmsIYULNg46oBA%3D&pvid=11_117.158.25.204_4823_1498208866215','￥nRMkZyghPND￥','10000','5622','10元无条件券','2017-03-11','2017-09-11','https://uland.taobao.com/coupon/edetail?e=BKyT8D0rqo0N%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH5k6yDPPQmHjI18ul4vsmrzUYUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCPXBKqe6HDQg&pid=mm_122550059_24984173_84538878&af=1','￥4TEvZyghkb4￥','https://s.click.taobao.com/34u9chw','否',NULL,'2') [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','548448786843','超值高端货！~意国潮PAI！！设计感印花真丝拼接圆弧下摆T恤女','http://img.alicdn.com/bao/uploaded/i1/201396873/TB2Yg_WlmtkpuFjy0FhXXXQzFXa_!!201396873.jpg','http://item.taobao.com/item.htm?id=548448786843','Joey家  专注高品质优雅女装七年 外单出口成衣','189','171','10','18.9','女人坊20080808','https://s.click.taobao.com/rhp9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3D7ogjnVUGOfocQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfbxfp%2BjaIfrRFekLGDi1eZIKI8x%2BOUi3IPB1P%2FPfC5CCAxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥i5UUZyghkFR￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','550680531042','UU大魔王 17夏 甜美学院风 条纹吊带连衣裙','http://img.alicdn.com/bao/uploaded/i2/2873084208/TB2CBYTvxxmpuFjSZFNXXXrRXXa_!!2873084208.jpg','http://item.taobao.com/item.htm?id=550680531042','uu大魔王 2U Exclusive Custom','168','201','13','21.84','uu大魔王1218','https://s.click.taobao.com/u0s9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3Dfw6UTGqYDAkcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb5R8S1CBS9sMvh4Wzn4LbpnkfxbVdqmhXA8rQQJiZYYIIYULNg46oBA%3D&pvid=11_117.158.25.204_4823_1498208866215','￥siQRZyghPTF￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0025s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','550735862087','左娇娇19UP2017新款气质显瘦网纱裙子套装裙两件套连衣裙女夏短袖','http://img.alicdn.com/bao/uploaded/i3/2218238275/TB2S.0MuC0mpuFjSZPiXXbssVXa_!!2218238275.jpg','http://item.taobao.com/item.htm?id=550735862087','19UP 左娇娇私服店','229','626','5','11.45','fashionnow_hz','https://s.click.taobao.com/yvo9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DknQvGMf7t94cQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb%2Fs8PUSDZUUQmRkaQ3yIp1UBv%2FrWO4GDXDsm8S2zb%2BUJIYULNg46oBA%3D&pvid=11_117.158.25.204_4823_1498208866215','￥QlQrZyghOLc￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0021s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','552228785714','美美的夏夏：羽毛刺绣仙女连衣裙夏2017新款圆领无袖收腰显瘦裙子','http://img.alicdn.com/bao/uploaded/i4/1765049647/TB2dI.usbVkpuFjSspcXXbSMVXa_!!1765049647.jpg','http://item.taobao.com/item.htm?id=552228785714','美美的夏夏','221.1','5468','5','11.06','美丽夏夏2013','https://s.click.taobao.com/pxp9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DNP2hPap6BXYcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb2PzZ0rtiQsSrDEBAI5GiSKXab8J7U%2F1Q4yz1hVwpUBmIYULNg46oBA%3D&pvid=11_117.158.25.204_4823_1498208866215','￥RTQsZyghQNb￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','551051942132','杨姗姗elwing2017新款一字领露肩民族风中长裙棉麻刺绣连衣裙女夏','http://img.alicdn.com/bao/uploaded/i3/554549648/TB2iqNhtB0lpuFjSszdXXcdxFXa_!!554549648.jpg','http://item.taobao.com/item.htm?id=551051942132','杨姗姗 ELWING 原创设计女装','388','837','10','38.8','elwing0112','https://s.click.taobao.com/uCq9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3D8dLKfYKKNggcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb7CIIyRmY58AFUUbQof5QZCqD6JYuWK8pFRaKEPHzyOe8rfp%2FY4T1zw%3D&pvid=11_117.158.25.204_4823_1498208866215','￥G0IfZyghkTJ￥','10000','10000','满11元减10元','2017-06-19','2017-07-31','https://uland.taobao.com/coupon/edetail?e=dr0lk0Pn6k4N%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH51xxIKKwGfHyKdgj1wM6j90YUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCGqcCp8QwPB8HcN5QxAaxvo%3D&pid=mm_122550059_24984173_84538878&af=1','￥Zb84ZyghkNO￥','https://s.click.taobao.com/Mau9chw','是',NULL,'2') [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','551446729149','QUEENZZ/白色连衣裙女夏2017新款韩版一字领露肩包裙条纹显瘦裙子','http://img.alicdn.com/bao/uploaded/i2/84466240/TB2m80OqCtkpuFjy0FhXXXQzFXa_!!84466240.jpg','http://item.taobao.com/item.htm?id=551446729149','QUEENZZ不穿高跟鞋的女王','95','110','19','18.05','昊立昊','https://s.click.taobao.com/Kau9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DqotfJE4PNZIcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfbza%2F4I16YvgcTgEJzapBilpHSoUB8HCbeE3dIOYv0f7%2BxiXvDf8DaRs%3D&pvid=11_117.158.25.204_4823_1498208866215','￥4pc8Zyghlo9￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','546874631373','Five Plus新品女夏装蕾丝花边拼接无袖连衣裙长裙2JM1084150','http://img.alicdn.com/bao/uploaded/i3/TB1vSYXQFXXXXafXVXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=546874631373','fiveplus官方旗舰店','695','228','6.5','45.18','fiveplus官方旗舰店','https://s.click.taobao.com/Krx9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3D6pcBgchdBf8cQipKwQzePOeEDrYVVa64K7Vc7tFgwiHjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb3R1aAvu9HGhekLGDi1eZIIiri6sD9h%2BzARMuFGtz0aWxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥vlT3Zyghjcb￥','100000','99279','满599元减30元','2017-06-21','2017-06-23','https://uland.taobao.com/coupon/edetail?e=LUJi7U1AGbkN%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH5YRW%2F4XE4xoIQGNlw%2BPkyeEYUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCPXBKqe6HDQg&pid=mm_122550059_24984173_84538878&af=1','￥3TyDZyghlom￥','https://s.click.taobao.com/iaw9chw','否',NULL,'2') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','549236014795','MIUCO欧洲站时尚裙子女装2017夏新款立体蕾丝无袖气质名媛连衣裙','http://img.alicdn.com/bao/uploaded/i3/671012022/TB2mr7ImCXlpuFjy0FeXXcJbFXa_!!671012022.jpg','http://item.taobao.com/item.htm?id=549236014795','MIUCO专注高品质快时尚女装','268','222','7','18.76','圣水无痕','https://s.click.taobao.com/oQn9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DiFjH2kj6SzAcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb0gdk%2BGERKnc43ZTvCW0Qqpy5ovUuuz61VVvEJ8R7UDexg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥g379ZyghPnN￥','100000','96673','满6元减5元','2017-06-22','2017-07-31','https://uland.taobao.com/coupon/edetail?e=W8pBqS68OAMN%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH5YcwBSoVN8krfDsB5oiThVEYUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCPXBKqe6HDQg&pid=mm_122550059_24984173_84538878&af=1','￥prMbZyghQv0￥','https://s.click.taobao.com/qEr9chw','否',NULL,'2') [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','544604363432','2017夏季欧美原宿风个性女装潮牌圆领中长款短袖t恤裙女宽松体恤','http://img.alicdn.com/bao/uploaded/i3/635680358/TB2g1bPdR0kpuFjy1zdXXXuUVXa_!!635680358.jpg','http://item.taobao.com/item.htm?id=544604363432','Maggie Yeung 原创设计师潮牌','129','180','25','32.25','忧郁的左声道','https://s.click.taobao.com/hhp9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3D51Jk8mVbdQkcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb026iKAi8MAVXEki0A8JiaxXfS%2FIn470VmdcfH%2FeydYUxg5p7bh%2BFbQ%3D&pvid=11_117.158.25.204_4823_1498208866215','￥8DMgZygh9Nf￥','10000','6787','满99元减10元','2017-06-08','2017-06-30','https://uland.taobao.com/coupon/edetail?e=2ak8gbWm4IgN%2BoQUE6FNzA3NciGougW18rmvHKfqvAl2eSdqkfnrKg1Y1LX%2Fw%2FH5kDY1%2FE7P%2F4XgURIYpURLs0YUejVMpzGc7sRUcQe1PUcAE1qo4xowb69cEv6tHmor567OcYXCb2RJi%2B4%2BEwtqCPXBKqe6HDQg&pid=mm_122550059_24984173_84538878&af=1','￥QD20ZyghQve￥','https://s.click.taobao.com/aWs9chw','否',NULL,'2') [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','549802812279','M Queen独立制衣 夏新款飞飞袖荷叶边V领系带雪纺中长连衣裙8211','http://img.alicdn.com/bao/uploaded/TB1PQkIQVXXXXanXpXXYXGcGpXX_M2.SS2','http://item.taobao.com/item.htm?id=549802812279','M Queen 独立制衣','119','1475','16.5','19.64','wildjtl','https://s.click.taobao.com/13t9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DT2hX2UKS9sAcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYANq%2BDna%2F8eQfgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfb4XnFRjex8yTTgEJzapBilobohW7S0hofDaSl7C0QW1DxiXvDf8DaRs%3D&pvid=11_117.158.25.204_4823_1498208866215','￥IO3XZyghlSH￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0027s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','550115182137','2017夏季新款网纱刺绣仙女飘逸气质连衣裙女中长款 V领小心机裙子','http://img.alicdn.com/bao/uploaded/i2/2287530464/TB2OlOpoHRkpuFjSspmXXc.9XXa_!!2287530464.jpg','http://item.taobao.com/item.htm?id=550115182137','benxe本希高端定制','188','6791','12','22.56','benxe高端定制','https://s.click.taobao.com/MMv9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DuLdvCj3Op%2BAcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYAFfrEfJ4hp2rgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfbzlW6KYh761BZUvXDHTuAeaDj6JmRVXS13ERDgVoUGF4IYULNg46oBA%3D&pvid=11_117.158.25.204_4823_1498208866215','￥E7KvZygh9Nh￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0031s ]
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 112 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498208925','552694799280','060610 2017夏季气质款 格纹印花真丝无袖连衣裙中长款不规则裙摆','http://img.alicdn.com/bao/uploaded/i1/11516132/TB28N1KsmtkpuFjy0FhXXXQzFXa_!!11516132.jpg','http://item.taobao.com/item.htm?id=552694799280','玉米高端轻奢女装inesmaye','488','187','6','29.28','chinesecorn','https://s.click.taobao.com/rvn9chw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxuWMrEPfKJIcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XLjf2vlNIV67i0GojADZoYAFfrEfJ4hp2rgZRypSXwmPbLXr%2BoQfTK%2FV0zG4SJdKX9DM37JBivfbzDOhFIoxU9gTgEJzapBilpWnWwm22QHDT4wrRB0ijNkxiXvDf8DaRs%3D&pvid=11_117.158.25.204_4823_1498208866215','￥dOr7ZyghkbD￥','0','0','无','','','',NULL,NULL,'否',NULL,'2') [ RunTime:0.0023s ]
+
+[ 2017-06-23T17:08:49+08:00 ] 192.168.120.81 /taobaoke/admin/tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002400s ]
+

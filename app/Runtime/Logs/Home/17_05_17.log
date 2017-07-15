@@ -1,0 +1,5 @@
+[ 2017-05-17T18:09:17+08:00 ] 127.0.0.1 /Demo/ThemeAdmin/default/assets/ico/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002176s ]
+

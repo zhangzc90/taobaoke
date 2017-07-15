@@ -1,0 +1,50 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+}
+*{
+	max-width: 100%;
+}
+.container{
+	max-width: 640px;
+	min-height: 300px;
+	margin: 0 auto;
+}
+.thumbnail img{
+	width: 100%;
+}
+.title{
+	padding: 0 8px;
+}
+.title h3{
+	margin: 10px 0;
+	font-size: 1.2em;
+}
+.time{
+	display: flex;
+	margin: 20px 8px;
+	padding-bottom: 8px;
+	font-size: 12px;
+	color: #777e83;
+	border-bottom: 1px solid #e0e0e0;
+}
+.time .time-flex{
+	flex:1;
+}
+.time .author{
+	width: 60px;
+	text-align: right;
+}
+.content{
+	padding: 0 8px;
+}
+.content img{
+	max-width: 100%;
+}
+.footer{
+	text-align: center;
+	font-size: 12px;
+	color: #777e83;
+}

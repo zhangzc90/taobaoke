@@ -1,0 +1,92 @@
+[ 2017-07-11T09:45:34+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000169s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004892s ]
+ERR: Could not open D:/wamp64/www/taobaoke/upload/excel/a.xlsx for reading! File does not exist.
+
+[ 2017-07-11T09:47:48+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003011s ]
+ERR: Could not open D:/wamp64/www/taobaoke/upload/excel/a.xlsx for reading! File does not exist.
+
+[ 2017-07-11T11:15:01+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003112s ]
+
+[ 2017-07-11T11:16:54+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001905s ]
+
+[ 2017-07-11T11:18:06+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001840s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002145s ]
+
+[ 2017-07-11T11:19:28+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003213s ]
+
+[ 2017-07-11T11:20:35+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001947s ]
+
+[ 2017-07-11T11:31:56+08:00 ] 127.0.0.1 /taobaoke/admin/Abc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+ERR: 1406:Data too long for column 'village' at row 1
+ [ SQL语句 ] : INSERT INTO `w_profile` (`name`,`img`,`years`,`rank`,`time`,`village`,`gender`,`nation`,`jointime`,`idcard`,`tel`,`mark`) VALUES ('吴胜利','','8','0','1499743916','郑州福尔文化创意有限公司','1','汉','2009/12/24','410122198507158090','15225196091','')
+ERR: 1406:Data too long for column 'village' at row 1
+ [ SQL语句 ] : INSERT INTO `w_profile` (`name`,`img`,`years`,`rank`,`time`,`village`,`gender`,`nation`,`jointime`,`idcard`,`tel`,`mark`) VALUES ('王乃湘','','22','0','1499743916','朱塘池村支部委员、村委委员','1','汉','1995/6/8','410122194904158010','15039085602','')
+ERR: 1406:Data too long for column 'village' at row 1
+ [ SQL语句 ] : INSERT INTO `w_profile` (`name`,`img`,`years`,`rank`,`time`,`village`,`gender`,`nation`,`jointime`,`idcard`,`tel`,`mark`) VALUES ('梅新建','','11','0','1499743916','河南银基房地产开发有限公司','1','汉','2006/1/16','410122198408048013','15890627462','')
+ERR: 1406:Data too long for column 'village' at row 1
+ [ SQL语句 ] : INSERT INTO `w_profile` (`name`,`img`,`years`,`rank`,`time`,`village`,`gender`,`nation`,`jointime`,`idcard`,`tel`,`mark`) VALUES ('张丽梅','','4','0','1499743916','洛阳锐通园林栈道工程有限公司','2','汉','2013/01','410122198803128064','15617757872','')
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001896s ]
+

@@ -1,0 +1,1274 @@
+[ 2017-06-14T10:02:36+08:00 ] 192.168.99.24 /taobaoke/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002332s ]
+
+[ 2017-06-14T10:03:39+08:00 ] 192.168.99.24 /taobaoke/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+
+[ 2017-06-14T10:03:46+08:00 ] 192.168.99.24 /taobaoke/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002464s ]
+
+[ 2017-06-14T10:03:47+08:00 ] 192.168.99.24 /taobaoke/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+
+[ 2017-06-14T10:04:05+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=107
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003228s ]
+
+[ 2017-06-14T10:04:29+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=107
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+
+[ 2017-06-14T10:04:30+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=107
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+
+[ 2017-06-14T10:04:30+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=107
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+
+[ 2017-06-14T10:08:49+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=107
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002459s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0412s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0028s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 107 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002868s ]
+
+[ 2017-06-14T10:09:09+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=107
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001914s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0100s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 107 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002172s ]
+
+[ 2017-06-14T10:09:47+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0017s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2017-06-14T10:20:11+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0058s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002342s ]
+
+[ 2017-06-14T10:24:51+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003291s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0041s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002434s ]
+
+[ 2017-06-14T10:25:30+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002034s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0068s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002774s ]
+
+[ 2017-06-14T10:25:33+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002164s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0027s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2017-06-14T10:25:39+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002323s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0057s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002140s ]
+
+[ 2017-06-14T10:25:44+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002254s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001427s ]
+
+[ 2017-06-14T11:07:41+08:00 ] 192.168.99.24 /taobaoke/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001978s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0067s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0139s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003940s ]
+
+[ 2017-06-14T11:07:50+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001775s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002715s ]
+
+[ 2017-06-14T11:08:10+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001892s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003119s ]
+
+[ 2017-06-14T11:09:02+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001962s ]
+
+[ 2017-06-14T11:09:25+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002617s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002231s ]
+
+[ 2017-06-14T11:09:32+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001636s ]
+
+[ 2017-06-14T11:09:32+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001587s ]
+
+[ 2017-06-14T11:09:33+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2017-06-14T11:10:09+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002134s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+
+[ 2017-06-14T11:10:10+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002126s ]
+
+[ 2017-06-14T11:10:11+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002135s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002504s ]
+
+[ 2017-06-14T11:10:11+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002635s ]
+
+[ 2017-06-14T11:10:30+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002413s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002736s ]
+
+[ 2017-06-14T11:10:31+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001641s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002093s ]
+
+[ 2017-06-14T11:10:31+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003100s ]
+
+[ 2017-06-14T11:10:40+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002261s ]
+
+[ 2017-06-14T11:10:41+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002704s ]
+
+[ 2017-06-14T11:10:42+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001955s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002250s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002618s ]
+
+[ 2017-06-14T11:10:47+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002590s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002804s ]
+
+[ 2017-06-14T11:11:01+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002628s ]
+
+[ 2017-06-14T11:11:06+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002489s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002056s ]
+
+[ 2017-06-14T11:11:08+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003504s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 45 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002193s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002689s ]
+
+[ 2017-06-14T11:11:21+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002361s ]
+
+[ 2017-06-14T11:11:59+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002367s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002045s ]
+
+[ 2017-06-14T11:12:16+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002657s ]
+
+[ 2017-06-14T11:12:51+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002560s ]
+
+[ 2017-06-14T11:13:04+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002378s ]
+
+[ 2017-06-14T11:13:43+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003232s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002642s ]
+
+[ 2017-06-14T11:14:07+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002432s ]
+
+[ 2017-06-14T11:14:38+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002074s ]
+
+[ 2017-06-14T11:14:48+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002242s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002483s ]
+
+[ 2017-06-14T11:14:56+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2017-06-14T11:14:58+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002463s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001757s ]
+
+[ 2017-06-14T11:15:04+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001758s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002842s ]
+
+[ 2017-06-14T11:17:09+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000308s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0055s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [2] Missing argument 3 for smarty_modifier_regex_replace(), called in D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php on line 51 and defined D:\wamp64\www\taobaoke\ThinkPHP\Library\Vendor\Smarty\plugins\modifier.regex_replace.php 第 24 行.
+NOTIC: [8] Undefined variable: replace D:\wamp64\www\taobaoke\ThinkPHP\Library\Vendor\Smarty\plugins\modifier.regex_replace.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.335716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.336401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001938s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002267s ]
+
+[ 2017-06-14T11:17:11+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002392s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [2] Missing argument 3 for smarty_modifier_regex_replace(), called in D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php on line 51 and defined D:\wamp64\www\taobaoke\ThinkPHP\Library\Vendor\Smarty\plugins\modifier.regex_replace.php 第 24 行.
+NOTIC: [8] Undefined variable: replace D:\wamp64\www\taobaoke\ThinkPHP\Library\Vendor\Smarty\plugins\modifier.regex_replace.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001868s ]
+
+[ 2017-06-14T11:17:52+08:00 ] 192.168.99.24 /taobaoke/coupon/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001874s ]
+
+[ 2017-06-14T11:17:54+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000154s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002373s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0021s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [2] Missing argument 3 for smarty_modifier_regex_replace(), called in D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php on line 51 and defined D:\wamp64\www\taobaoke\ThinkPHP\Library\Vendor\Smarty\plugins\modifier.regex_replace.php 第 24 行.
+NOTIC: [8] Undefined variable: replace D:\wamp64\www\taobaoke\ThinkPHP\Library\Vendor\Smarty\plugins\modifier.regex_replace.php 第 33 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001783s ]
+
+[ 2017-06-14T11:18:06+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002011s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.269257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.269648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001290s ]
+
+[ 2017-06-14T11:18:35+08:00 ] 192.168.99.24 /taobaoke/coupon/coupon.html?goods_id=115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 115 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.241076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.241396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001625s ]
+
+[ 2017-06-14T11:27:55+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002800s ]
+
+[ 2017-06-14T11:28:23+08:00 ] 127.0.0.1 /taobaoke/coupon/coupon?goods_id=175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Array to string conversion D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.252898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.253162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001905s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002387s ]
+
+[ 2017-06-14T11:28:33+08:00 ] 127.0.0.1 /taobaoke/coupon/coupon?goods_id=175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002818s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005165s ]
+
+[ 2017-06-14T11:31:01+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001810s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant __CLASS - assumed '__CLASS' D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 17 行.
+NOTIC: [2] array_map() expects parameter 1 to be a valid callback, class '__CLASS' not found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001571s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001823s ]
+
+[ 2017-06-14T11:31:04+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001887s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0047s ]
+NOTIC: [8] Use of undefined constant __CLASS - assumed '__CLASS' D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 17 行.
+NOTIC: [2] array_map() expects parameter 1 to be a valid callback, class '__CLASS' not found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002192s ]
+
+[ 2017-06-14T11:31:16+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002483s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant __CLASS - assumed '__CLASS' D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 17 行.
+NOTIC: [2] array_map() expects parameter 1 to be a valid callback, class '__CLASS' not found D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php 第 17 行.
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001906s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002859s ]
+
+[ 2017-06-14T11:31:50+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006836s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php:18) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php:18) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Home\Controller\CouponController.class.php:18) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001821s ]
+
+[ 2017-06-14T11:31:55+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002143s ]
+
+[ 2017-06-14T11:33:58+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002227s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.226017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.226282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001877s ]
+
+[ 2017-06-14T11:34:17+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002279s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0054s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.263659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.264049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002862s ]
+
+[ 2017-06-14T11:34:28+08:00 ] 127.0.0.1 /taobaoke/coupon/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link` FROM `tao` WHERE `end_time` >= '2017-06-14' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.360216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.360608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002469s ]
+
+[ 2017-06-14T11:35:19+08:00 ] 127.0.0.1 /taobaoke/coupon/coupon?goods_id=175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2017-06-14T11:35:33+08:00 ] 127.0.0.1 /taobaoke/coupon/coupon?goods_id=175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000124s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002990s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0017s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.277516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.277954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2017-06-14T11:35:48+08:00 ] 127.0.0.1 /taobaoke/coupon/coupon?goods_id=175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Undefined index: item D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php 第 45 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: item D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php 第 45 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\64b98df75aca9117fa2230ad9978a41867727b89.file.coupon.tpl.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.320353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.320651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002214s ]
+
+[ 2017-06-14T11:36:09+08:00 ] 127.0.0.1 /taobaoke/coupon/coupon?goods_id=175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0015s ]
+SQL: SELECT `goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_denomination`,`coupon_word` FROM `tao` WHERE `id` = 175 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: title D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+NOTIC: [8] Trying to get property of non-object D:\wamp64\www\taobaoke\app\Runtime\Cache\0d76a1dc8120947f5fb76a596c6c541e123a4391.file.header.tpl.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.309591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.310107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003994s ]
+
+[ 2017-06-14T14:53:10+08:00 ] 127.0.0.1 /taobaoke/ThemeAdmin/default/assets/ico/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000966s ]
+
+[ 2017-06-14T19:52:32+08:00 ] 127.0.0.1 /taobaoke/Theme/default/assets/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+ERR: 无法加载控制器:Theme
+
+[ 2017-06-14T19:52:32+08:00 ] 127.0.0.1 /taobaoke/Theme/default/assets/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+ERR: 无法加载控制器:Theme
+
+[ 2017-06-14T19:52:32+08:00 ] 127.0.0.1 /taobaoke/Theme/default/assets/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001941s ]
+ERR: 无法加载控制器:Theme
+
+[ 2017-06-14T19:52:46+08:00 ] 127.0.0.1 /taobaoke/Theme/default/assets/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000364s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002378s ]
+ERR: 无法加载控制器:Theme
+
+[ 2017-06-14T19:52:47+08:00 ] 127.0.0.1 /taobaoke/Theme/default/assets/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+ERR: 无法加载控制器:Theme
+
+[ 2017-06-14T19:52:47+08:00 ] 127.0.0.1 /taobaoke/Theme/default/assets/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001887s ]
+ERR: 无法加载控制器:Theme
+

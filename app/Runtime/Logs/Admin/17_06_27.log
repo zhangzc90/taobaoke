@@ -1,0 +1,610 @@
+[ 2017-06-27T17:00:29+08:00 ] 127.0.0.1 /taobaoke/admin/tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+
+[ 2017-06-27T17:00:32+08:00 ] 127.0.0.1 /taobaoke/admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002298s ]
+
+[ 2017-06-27T17:00:36+08:00 ] 127.0.0.1 /taobaoke/admin/index/login_submit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0628s ]
+SQL: SELECT * FROM `w_users` WHERE ( user_login="admin" ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0068s ]
+NOTIC: [8] Undefined index: validate D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `w_logs` (`user_id`,`login_time`,`login_ip`,`login_referer`) VALUES ('1','1498554036','127.0.0.1','http://127.0.0.1/taobaoke/admin/index/login.html') [ RunTime:0.0064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2017-06-27T17:00:36+08:00 ] 127.0.0.1 /taobaoke/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `w_pages` [ RunTime:0.0060s ]
+SQL: SELECT `user_nickname`,`page_id`,`page_title`,`page_time` FROM `w_pages` INNER JOIN w_users on w_users.ID=w_pages.page_author  WHERE `page_status` = 'open' AND `w_user_level` <= '10' ORDER BY page_time desc LIMIT 0,5   [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_pages` WHERE `page_status` = 'open' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `w_post` [ RunTime:0.0048s ]
+SQL: SELECT w_post.ID as id,`post_date`,`post_title`,`user_nickname`,`post_status` FROM `w_post` INNER JOIN w_users on w_users.ID=w_post.post_author  WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' ORDER BY post_date desc LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_post` WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0033s ]
+SQL: SELECT w_logs.*,user_nickname as name FROM `w_logs` LEFT JOIN w_users on w_users.ID=w_logs.user_id  ORDER BY login_time desc LIMIT 0,5   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2017-06-27T17:00:42+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028831s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002489s ]
+
+[ 2017-06-27T17:01:12+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001948s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0040s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554072','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554072','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T17:03:52+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002084s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003307s ]
+
+[ 2017-06-27T17:03:59+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002173s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0040s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554239','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554239','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T17:05:21+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001831s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033834s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001985s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002521s ]
+
+[ 2017-06-27T17:05:32+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0036s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554332','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554332','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T17:05:48+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003108s ]
+
+[ 2017-06-27T17:05:54+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002077s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0048s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554354','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554354','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T17:06:17+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0037s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554377','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554377','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T17:06:35+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000548s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001672s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005308s ]
+
+[ 2017-06-27T17:06:45+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0034s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554405','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554405','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T17:14:01+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002872s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0034s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554841','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498554841','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T17:25:42+08:00 ] 127.0.0.1 /taobaoke/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002806s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `w_pages` [ RunTime:0.0036s ]
+SQL: SELECT `user_nickname`,`page_id`,`page_title`,`page_time` FROM `w_pages` INNER JOIN w_users on w_users.ID=w_pages.page_author  WHERE `page_status` = 'open' AND `w_user_level` <= '10' ORDER BY page_time desc LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_pages` WHERE `page_status` = 'open' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `w_post` [ RunTime:0.0033s ]
+SQL: SELECT w_post.ID as id,`post_date`,`post_title`,`user_nickname`,`post_status` FROM `w_post` INNER JOIN w_users on w_users.ID=w_post.post_author  WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' ORDER BY post_date desc LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_post` WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0031s ]
+SQL: SELECT w_logs.*,user_nickname as name FROM `w_logs` LEFT JOIN w_users on w_users.ID=w_logs.user_id  ORDER BY login_time desc LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003214s ]
+
+[ 2017-06-27T17:25:46+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`goods_thumbnail`,`goods_name`,`goods_detail`,`goods_price`,`income`,`commission`,`tao_link`,`coupon_number`,`coupon_denomination`,`coupon_link`,`start_time`,`end_time`,`add_time` FROM `tao` WHERE `user_goods` = 0 LIMIT 0,30   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tao` WHERE `user_goods` = 0 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.402286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.402718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001705s ]
+
+[ 2017-06-27T18:20:48+08:00 ] 127.0.0.1 /taobaoke/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001734s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002117s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_pages` [ RunTime:0.0041s ]
+SQL: SELECT `user_nickname`,`page_id`,`page_title`,`page_time` FROM `w_pages` INNER JOIN w_users on w_users.ID=w_pages.page_author  WHERE `page_status` = 'open' AND `w_user_level` <= '10' ORDER BY page_time desc LIMIT 0,5   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_pages` WHERE `page_status` = 'open' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `w_post` [ RunTime:0.0044s ]
+SQL: SELECT w_post.ID as id,`post_date`,`post_title`,`user_nickname`,`post_status` FROM `w_post` INNER JOIN w_users on w_users.ID=w_post.post_author  WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' ORDER BY post_date desc LIMIT 0,5   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_post` WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' AND `post_author` <= '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `w_logs` [ RunTime:0.0038s ]
+SQL: SELECT w_logs.*,user_nickname as name FROM `w_logs` LEFT JOIN w_users on w_users.ID=w_logs.user_id  ORDER BY login_time desc LIMIT 0,5   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_logs` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002337s ]
+
+[ 2017-06-27T18:20:53+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/utao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+ERR: 非法操作:utao_new
+
+[ 2017-06-27T18:21:04+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002243s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003379s ]
+
+[ 2017-06-27T18:21:13+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498558873','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','3')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498558873','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','3')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T18:23:33+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002005s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498559013','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','3')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498559013','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','3')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T18:37:14+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002567s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004799s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003737s ]
+
+[ 2017-06-27T18:37:22+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002933s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498559842','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+ERR: 1265:Data truncated for column 'coupon_number' at row 1
+ [ SQL语句 ] : INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498559842','549868777869','锐巢竹炭包活性炭除甲醛活性炭包新房装修家具除味家用碳包去甲醛','http://img.alicdn.com/bao/uploaded/i3/465127807/TB27mWItYtlpuFjSspoXXbcDpXa_!!465127807.jpg','http://item.taobao.com/item.htm?id=549868777869','东方明锐家居店','39','4376','20','14.47','推广中','37.10','14.47','2017-06-23 00:00:00','2017-07-21 23:59:59','sulin201088','https://s.click.taobao.com/ofARMhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DxoPKFKZPSLwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqfvzEGye8wsaByy0g7RzMQemwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5hb9DrkAfFfvrMx6LPFp5YNKt5XQt9irwg2jnnjS8bv8h9TbKRs8zk5aMQvNLlKhTapYjNkZmVi4a7A0gBjfcJl6jnGIFj%2B15A%3D%3D&pvid=11_117.158.25.204_1370_1498550614116','￥9XXhZBfiLQ8￥','3000','2177','满39元减20元','2017-06-23','2017-06-29','1')
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php:43) D:\wamp64\www\taobaoke\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-06-27T18:46:59+08:00 ] 127.0.0.1 /taobaoke/Admin/Tao/import_data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000441s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','43736680382','加厚黑板贴纸 儿童房涂鸦墙膜 宝宝家用可擦写黑板墙贴自粘可移除','http://img.alicdn.com/bao/uploaded/i1/TB1KJ0LRXXXXXcvXVXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=43736680382','格琳斯家居用品旗舰店','7.9','1932','2','2.41','格琳斯家居用品旗舰店','https://s.click.taobao.com/uAvhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DC2J2PBvBxe4cQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqBuky%2F0Sep%2BGmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5gQI59amzUfvZ3NTVBxAr%2BDVt8r2jiP3cT30z5FTYSBXfBL5LlYL98lBkFEw6B9nPl2LXlE%2BUX9AaZGXncj3JZs9BQMhrjj29g%3D%3D&pvid=11_117.158.25.204_659_1498560134947','￥pUKhZBg05aY￥','50000','48424','满7元减2元','2017-05-26','2017-06-29','https://uland.taobao.com/coupon/edetail?e=dldCPMLk1TvzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctB%2FuIgsuuYpT2nStfeHDGr7c9yU8cAwci2t0uovksDuG1hCdiW%2FHqxuYZyEhUTFjq5P1Dc%2B10pvSPaEywAJnnsKJ7%2BkHL3AEW&pid=mm_44012812_29486138_109576309&af=1','￥0IQUZBg0TuX￥','https://s.click.taobao.com/4rqhLhw',NULL,NULL,'1') [ RunTime:0.0087s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','520170777800','大学生寝室宿舍洗澡神器电动自吸便携式简易淋浴器热水器花洒套装','http://img.alicdn.com/bao/uploaded/i3/764981682/TB2rS3DkpXXXXX2XXXXXXXXXXXX_!!764981682.jpg','http://item.taobao.com/item.htm?id=520170777800','宿舍神器1号店','51.8','922','18','13.26','jackzaojingling518','https://s.click.taobao.com/95ohLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DWLc4OUTbW%2FQcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5nfYdStnlO4HI%2BCYrEurAk2cqcw95vmlJfxY0L9nEaiQh9TbKRs8zk5lCcWmH7vSQHHUxNAbdxR6d6uW5UCTOLfI1gkGhM0nyw%3D%3D&pvid=11_117.158.25.204_659_1498560134947','￥GdFmZBg0Ufx￥','10000','8631','满50元减3元','2017-03-17','2017-09-17','https://uland.taobao.com/coupon/edetail?e=loCCezp2VZTzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctaFpW13O8HuGuq4IOb1S3%2F%2Bf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥ulpGZBg060D￥','https://s.click.taobao.com/ErohLhw',NULL,NULL,'1') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','522657657811','组装简易衣柜 简约现代经济型折叠衣橱简装衣服柜儿童组合收纳柜','http://img.alicdn.com/bao/uploaded/i3/TB1rK4FQXXXXXaHXpXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=522657657811','宏灿家具旗舰店','296','37','3.5','55.74','宏灿家具旗舰店','https://s.click.taobao.com/NKohLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3Df4SRsu9Ms2IcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5lSt6hd%2BrWxu3OcXHB4GXrpCG0kWI60Eov2F2tJXJJDQMm%2Bd4ED4x8kPhQY9%2B%2BtH99Rnx2JhHBuXxRR3AQhKmYtU6c5ouoIlkMYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥QfNLZBg05aU￥','50000','46786','满189元减5元','2017-04-12','2017-06-30','https://uland.taobao.com/coupon/edetail?e=vOt7vBtATrrzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctbfgW%2FNRuxfbFfyKPVIkiTuf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥LrEsZBg0UPi￥','https://s.click.taobao.com/B8shLhw',NULL,NULL,'1') [ RunTime:0.0067s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','537350855531','充电池led节能声控小夜灯宝宝儿童壁灯卧室起夜楼道过道人体感应','http://img.alicdn.com/bao/uploaded/i3/TB1sQtBPpXXXXazapXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=537350855531','欣兰雅舍旗舰店','35','371','2','7.28','欣兰雅舍旗舰店','https://s.click.taobao.com/cJnhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DRF9kJwqgnmMcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5qDygSd8oN7ekR48K7YYbH2DdDETGcnTUeHVaCpS7NS6h9TbKRs8zk7r1deHH3Cyv2Sd1uFR%2BXFJdZrhJRdVv2Yn9VoNRVq3Dw%3D%3D&pvid=11_117.158.25.204_659_1498560134947','￥vNBHZBg06TM￥','5000','717','满34元减5元','2017-02-05','2017-06-30','https://uland.taobao.com/coupon/edetail?e=ZBUzzyjhdYnzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctdI4gzZl6pOgJXPFxser2HOf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥kdAZZBg0SgT￥','https://s.click.taobao.com/cOthLhw',NULL,NULL,'1') [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','535563294632','MOEXT新老式马桶盖通用加厚缓降OVU型PP普通坐便器盖板座便盖','http://img.alicdn.com/bao/uploaded/i3/2838574872/TB2WlReXXrB11BjSspjXXciYpXa_!!2838574872.jpg','http://item.taobao.com/item.htm?id=535563294632','MOEXT(摩科斯特)致杰卫浴','59','170','10','8.85','moext','https://s.click.taobao.com/ldthLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DNcwUWqA1GEwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5iV6PNySrtjII95G25NVA39ayD%2Bte3MeWWALLW4EJ5N0Mm%2Bd4ED4x8k0e5wu51c3%2By2BopGwNbZclcr6bhrbfw%2BFlw2W4KNhHcYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥yJiqZBg0Sua￥','10000','9310','5元无条件券','2017-03-09','2017-09-09','https://uland.taobao.com/coupon/edetail?e=NtKOanZW2PTzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctEpTC0D6kyrKVHlQuuQpZsef5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥pGbBZBg0UPP￥','https://s.click.taobao.com/1pnhLhw',NULL,NULL,'1') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','523885277546','森活无火香薰精油套装宠物陶瓷香薰瓶炉卧室内创意礼品','http://img.alicdn.com/bao/uploaded/i2/TB1sRnhMXXXXXc0aXXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=523885277546','森活SOVO官方店','49.9','36','10','15.97','sovo森活','https://s.click.taobao.com/XsshLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DdIYhRIN5%2BHIcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5iSyn1ZzZ%2FIFrcdrNWZ1eaW1ibkFUCthbktlf3VS2XkNfBL5LlYL98kL0TJbERtR0k8df%2BnAkqsSwLRFiGQRUSeRUbqjzwSFR6Jn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥zFrmZBg05U6￥','5000','4963','满35元减5元','2017-06-24','2017-09-30','https://uland.taobao.com/coupon/edetail?e=hH3Ax3VTDOPzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bct4CAz2GBErQwP49FLqz6IkOf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥elWyZBg06GY￥','https://s.click.taobao.com/WOthLhw',NULL,NULL,'1') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','520810802232','立体雕刻正宗桃木兔子 木雕兔 木质兔子 玉兔吉祥小摆件 助运开运','http://img.alicdn.com/bao/uploaded/i2/TB1ltPwRVXXXXaxXFXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=520810802232','泰山如意风水','39','43','1.5','12.52','花溪桃桃','https://s.click.taobao.com/DQuhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DYVKQKOcXY2scQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5oxy9Zmp9IL%2BHBLBgsVMkH2oIg4mOA2n645LKPIAbVw6fBL5LlYL98nGt%2BvMt7cGEZidGuLN9mCyyTqS2N9RzIrHp5iyPxk2IqJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥7dsoZBg05ta￥','10000','9696','满10元减5元','2017-06-23','2017-06-28','https://uland.taobao.com/coupon/edetail?e=VatSSuf8O2vzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctDb1%2Bh8UwY73c9QrsfmoD6ef5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥gi09ZBg0UHJ￥','https://s.click.taobao.com/XSwhLhw',NULL,NULL,'1') [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','534201672339','拖把架子免打孔挂钩拖布夹扫把挂架壁挂多功能厨房卫生间置物收纳','http://img.alicdn.com/bao/uploaded/i1/601316153/TB265F4pl8lpuFjSspaXXXJKpXa_!!601316153.jpg','http://item.taobao.com/item.htm?id=534201672339','朴普卫浴体验店','19','57','1.5','3.8','小俊杂货店520','https://s.click.taobao.com/vaohLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3Di310EGVieNocQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5jf1ho6LUccy58ovq%2FzQPJCDRGu1sbVznCV75dzeWFmWfBL5LlYL98nXGIXNhbPW17F%2F%2F6z8GrasRh7uxIYm%2Fqw2cC%2BPdJZaQKJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥f1nAZBg0T5A￥','100000','99567','满15元减3元','2017-06-22','2017-12-21','https://uland.taobao.com/coupon/edetail?e=fImMwlqptnTzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bct7WtrD%2Fyxk7dqLGrACuswvuf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥lfFGZBg0hua￥','https://s.click.taobao.com/aExhLhw',NULL,NULL,'1') [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','537178685544','顺丰包邮3D打印月球灯月亮灯双色触遥控创意夜灯送男女生朋友礼物','http://img.alicdn.com/bao/uploaded/i2/TB10bdrRVXXXXbHaXXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=537178685544','Micromake企业店','66','479','25','18.8','迈客美客科技','https://s.click.taobao.com/kHmhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DUNITusdmXAgcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5gYxbROMeGnc42FlNM%2Fva3MhtEvWDmA3RQ5sbiDHcQJifBL5LlYL98nG%2F8K%2BbSjpHx4jOI4Nz8jmB3RoWeCQ%2Fi3ZVVgN%2FCDBcaJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥mUReZBg06GS￥','3333','769','3元无条件券','2017-03-20','2017-06-30','https://uland.taobao.com/coupon/edetail?e=9UzCPm9RH5vzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctGWn%2BWGv2WjicCWOe%2Bese4ef5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥YTiTZBg0hbt￥','https://s.click.taobao.com/CKohLhw',NULL,NULL,'1') [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','548256898609','日式LED实木壁灯北欧原木楼梯过道床头卧室灯卫生间化妆镜前灯具','http://img.alicdn.com/bao/uploaded/i1/TB1_S.eQpXXXXaGapXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=548256898609','恒佳灯饰旗舰店','78','44','5.5','12.17','恒佳灯饰旗舰店','https://s.click.taobao.com/chvhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3Dy2Lf324t3aMcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5ixTgGnJ%2BiSwRaqDlYY11lt8Y03cS%2F4wVMGzLCoV59bFMm%2Bd4ED4x8nSMYAiCta%2BZBFqzI4p0TFihBcsPrdN1oJoY%2BtbTQe4s8Yl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥nc1sZBg0Su7￥','10000','10000','满10元减5元','2017-06-27','2017-12-27','https://uland.taobao.com/coupon/edetail?e=vlmEXCpt44jzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctGV7AyKgK5b%2FSnP6T8%2Ft1L%2Bf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥gFZcZBg0SmR￥','https://s.click.taobao.com/9ywhLhw',NULL,NULL,'1') [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','526148287481','衣柜灯衣橱灯橱柜开关手压床头卧室壁橱灯创意节能led书柜 尾箱灯','http://img.alicdn.com/bao/uploaded/i2/1585848354/TB2K3SxubXlpuFjy1zbXXb_qpXa_!!1585848354.jpg','http://item.taobao.com/item.htm?id=526148287481','上海公创','22','388','5','8.8','上海公创','https://s.click.taobao.com/paohLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DoYVMN5N%2BywQcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5qZkU6pJUpYgkYCjLHhWPM3unWnK40anmB63KoAQdwapMm%2Bd4ED4x8mCNnrWu%2FPYLu7pDpCThZNb5ov3Dv2ChA5jLbhm1MPlCcYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥PwtVZBg05tg￥','1000','769','满20元减3元','2017-05-15','2017-06-30','https://uland.taobao.com/coupon/edetail?e=Umaei1MEJhTzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bct6c27qlcstntb6KSVSGDjyuf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥9li8ZBg06mB￥','https://s.click.taobao.com/mbphLhw',NULL,NULL,'1') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','529209932698','瑞沃大卷纸盒厕所纸巾盒卫生间防水卷纸架大卷纸巾盒纸巾架卷筒纸','http://img.alicdn.com/bao/uploaded/i4/309298305/TB2yGlHlFXXXXbeXpXXXXXXXXXX_!!309298305.jpg','http://item.taobao.com/item.htm?id=529209932698','瑞沃博美店','47','210','5','4.74','svavo大青蛙','https://s.click.taobao.com/u4ohLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3D3GAxzN1EgSEcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5vb2hwdpkrsVvsnP5OSQ%2F25%2FpGC7FVqw%2B8VojRRG1FwDfBL5LlYL98mG0zJyZs5pjOgWxt%2Bey9FBSWr%2BLcKdJVlDZIGtg%2FN%2Fr6Jn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥Zj4FZBg0UtX￥','100000','98981','满6元减5元','2017-06-15','2017-07-31','https://uland.taobao.com/coupon/edetail?e=XT2fJ7h18DfzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctKUBkPimdhaCGYC8DmJsS%2Buf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥K13iZBg0S0D￥','https://s.click.taobao.com/OSwhLhw',NULL,NULL,'1') [ RunTime:0.0022s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','537591701918','维玛 led吸顶灯圆形客厅灯简约现代卧室书房餐厅走廊过道阳台灯具','http://img.alicdn.com/bao/uploaded/i4/TB1UCaeRVXXXXa8XFXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=537591701918','维玛水木记专卖店','129','1646','2','53.54','维玛水木记专卖店','https://s.click.taobao.com/sonhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DrI5CsAbzGs8cQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5oUOQy5R9HUG5N%2FeOYRyM624UK1emJkQkIJgWOt%2B3NyFMm%2Bd4ED4x8l6cx3fWO32iMokuR5YoxqMzdKJZRYaY0feHHn7FKOOlsYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥qBe3ZBg066e￥','10000','6226','3元无条件券','2017-04-05','2017-10-05','https://uland.taobao.com/coupon/edetail?e=hHL4Aid7U%2FTzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctBSKrrLxu3%2B7h8oYkz8JsEuf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥A5fxZBg0Tut￥','https://s.click.taobao.com/TdshLhw',NULL,NULL,'1') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','544542341876','墨凡 宣德仿古陶瓷香炉檀香炉家用薰香炉盘香炉窑变釉香篆炉摆件','http://img.alicdn.com/bao/uploaded/i2/TB1w3I0RpXXXXcCapXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=544542341876','墨凡隆玺专卖店','29.9','2955','6.5','10.32','墨凡隆玺专卖店','https://s.click.taobao.com/ywvhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3Dnu7pGl2%2BIw0cQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5o2eSjR%2FNPJwbaoJlbCzNvubn5ZP0EPtyZ42hQ6mQmSQfBL5LlYL98nvwiG5N7Gqx6W9Vc7a5mCT8rBOF28%2FO0Fd%2F5Fqi%2FN3uaJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥BQHsZBg0Tgm￥','2000','1596','满28元减15元','2017-06-23','2017-06-30','https://uland.taobao.com/coupon/edetail?e=c3nkthE2N%2B%2FzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bctk26wKC%2BSuafKN7TwvGjONuf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥aL8RZBg0hYX￥','https://s.click.taobao.com/2rohLhw',NULL,NULL,'1') [ RunTime:0.0033s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','536632883468','双开门对开门冰箱底座架西门海尔三星大支架不锈钢移动底架子通用','http://img.alicdn.com/bao/uploaded/i1/1629223632/TB2s6CPXIgd61BjSZFjXXbXspXa_!!1629223632.jpg','http://item.taobao.com/item.htm?id=536632883468','淘亿佳家居自营店','85','35','5','13.52','cyw奕文','https://s.click.taobao.com/q3nhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3D%2Fzni%2BcqKUDccQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5sfIF%2Be0FnZ8SFjp6G5fxT%2BLisgGC0im1hJSLNLji2hcfBL5LlYL98mcsFQK0%2FxGHWon26cvtRh8fvtsbq9Z9E7fSH7N0qq9cqJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥yC7nZBg06bK￥','1000','732','满39元减5元','2017-06-21','2017-06-30','https://uland.taobao.com/coupon/edetail?e=%2Br4p%2F1l9Sv7zX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bct4Sd957jK4D7QauaaheQSAef5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥siQuZBg066Q￥','https://s.click.taobao.com/v1mhLhw',NULL,NULL,'1') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','35882865714','儿童简易书架学生简约现代家用书柜实木创意桌上楠竹多功能置物架','http://img.alicdn.com/bao/uploaded/i1/TB1uSYlRFXXXXcSXpXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=35882865714','艾芮特旗舰店','48','446','18.5','9.84','艾芮特旗舰店','https://s.click.taobao.com/8srhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DGaS%2FUR6VuTQcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5qndfZu7W%2BKWNyi%2BTcTXGLiyOiQYGZi9cHZlZWRBlCckMm%2Bd4ED4x8kWG2ZPNGCjsTkwOf9BUkNB0qybHHTYT8IWnFdkS09sFqJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥cnsOZBg066m￥','10000','6715','满30元减3元','2017-05-24','2017-08-31','https://uland.taobao.com/coupon/edetail?e=mzNBQyK%2FsLDzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bct8vqagFb%2B8AA%2FGGQT58vhpLc9yU8cAwci2t0uovksDuG1hCdiW%2FHqxuYZyEhUTFjq5P1Dc%2B10pvSPaEywAJnnsKJ7%2BkHL3AEW&pid=mm_44012812_29486138_109576309&af=1','￥T16lZBg07ND￥','https://s.click.taobao.com/n5phLhw',NULL,NULL,'1') [ RunTime:0.0025s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','536505148575','多层阶梯花架阳台室内外多层碳化防腐木花架子实木质多肉花架盆景','http://img.alicdn.com/bao/uploaded/i1/TB1XzSOQpXXXXX8XpXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=536505148575','佰娜森旗舰店','68','19','3.5','11.22','佰娜森旗舰店','https://s.click.taobao.com/lMqhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DzaMENWMVM4McQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5rFVXyTE2ddud20SZPx9Q7cnC4%2Fv2vKWBeH7Rrf9VY5PfBL5LlYL98mPmgXzVUrvP%2B1JyXZOx6%2FI8ilQ8Qx70QeWVV%2Flx6jL6KJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥XUY8ZBg0g0V￥','8000','7623','满68元减5元','2017-06-03','2017-06-30','https://uland.taobao.com/coupon/edetail?e=RmQuR4ljxOfzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctcN0q2G76l4i05kPoG4ngZ%2Bf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥F2EuZBg076a￥','https://s.click.taobao.com/hXmhLhw',NULL,NULL,'1') [ RunTime:0.0026s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','552116490395','samedream鞋架简易家用经济型宿舍用寝室防尘多层实木鞋柜收纳架','http://img.alicdn.com/bao/uploaded/i1/TB1PUTiRpXXXXcGapXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=552116490395','samedream家具旗舰店','35.99','409','2','7.38','samedream家具旗舰店','https://s.click.taobao.com/0RvhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DqSNWMqQo9b4cQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5huUFBFaX0E5%2FI%2Ft8PgTPghUSeklyOLpWFf1Q0J2cJKpMm%2Bd4ED4x8m3EqffdiZakDvdBfrHgVs5%2ByOwmyWXJcLcz6fq5sjLjcYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥eMaJZBg07Yz￥','100000','99996','满2元减1元','2017-06-26','2017-09-30','https://uland.taobao.com/coupon/edetail?e=KV8CyFr2B2HzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctzK07bmSfuMqqxWM8w0pOjOf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥oIBLZBg0TFW￥','https://s.click.taobao.com/abphLhw',NULL,NULL,'1') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','15509514483','荣旭diy数字油画客厅风景花卉动漫人物填色手工绘油彩装饰画40*50','http://img.alicdn.com/bao/uploaded/i1/691978892/TB2pcwnp3JlpuFjSspjXXcT.pXa_!!691978892.jpg','http://item.taobao.com/item.htm?id=15509514483','荣旭时尚家饰','14.9','5019','30','4.48','荣旭时尚家居','https://s.click.taobao.com/XHmhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DYD3ifgaV6PYcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5pfF5FGrkSN0hy63RJMi8nMQX4mtC5zofzO8c%2B6WZYEsfBL5LlYL98kzaxVsjZq4cxNKe6bQMplne1stg9%2BbTXo9uiXcuPLLag%3D%3D&pvid=11_117.158.25.204_659_1498560134947','￥XhvsZBg066D￥','20000','7112','满14元减5元','2017-06-24','2017-06-28','https://uland.taobao.com/coupon/edetail?e=K6bjC4r6JbnzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctUuk1Vv%2FTiDaH8HDQjr1g1Lc9yU8cAwci2t0uovksDuG1hCdiW%2FHqxuYZyEhUTFjq5P1Dc%2B10pvSPaEywAJnnsKJ7%2BkHL3AEW&pid=mm_44012812_29486138_109576309&af=1','￥B6YRZBg0gm7￥','https://s.click.taobao.com/0QuhLhw',NULL,NULL,'1') [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','549080900127','修正电子腕式血压测量仪老人量血压家用全自动器语音手腕式血压计','http://img.alicdn.com/bao/uploaded/i3/360885455/TB2N0iJmCxjpuFjSszeXXaeMVXa_!!360885455.jpg','http://item.taobao.com/item.htm?id=549080900127','冠奇医疗器械商城','158','14','5','31.6','爱无止境0707','https://s.click.taobao.com/1ywhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DduCns7rh8TEcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5lMbKI9RLvehKecsWEbQ2h6fK0pdAJ6tCCDypxbEGBKRh9TbKRs8zk7pXUaRL2551yQErX8ofj%2F%2FCbppqhOsQcli%2FwCHehRNJQ%3D%3D&pvid=11_117.158.25.204_659_1498560134947','￥FMGnZBg07nX￥','1000','1000','满98元减5元','2017-06-27','2017-07-31','https://uland.taobao.com/coupon/edetail?e=0jveHBVnUULzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctHdZMsD%2FeiPXFygsvwzxUwOf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥wPuhZBg0SFf￥','https://s.click.taobao.com/xfuhLhw',NULL,NULL,'1') [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','538626498094','卫浴免打孔304不锈钢毛巾杆挂杆加长卫生间单杆双杆毛巾架子浴室','http://img.alicdn.com/bao/uploaded/i2/TB1z4dgOpXXXXbHXpXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=538626498094','雅美姬家居旗舰店','29','464','20.5','6.53','雅美姬家居旗舰店','https://s.click.taobao.com/n3nhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DGZeNwUVwIIscQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5kgxc8yQGtLchd1Y5Jc%2FM6wIHJHrcbK8WgxJtvU1GBTWMm%2Bd4ED4x8lilkjxNI82qF91ZhoS%2B1mBi7HlyB%2FG0xh9AgroxahzdsYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥YcVbZBg076U￥','50000','44061','2元无条件券','2017-05-09','2017-11-09','https://uland.taobao.com/coupon/edetail?e=MTQLtj%2BYjU7zX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctMg4ZO1PD2l6wR5vF35EOu%2Bf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥DA2dZBg0huw￥','https://s.click.taobao.com/cNshLhw',NULL,NULL,'1') [ RunTime:0.0017s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','550548880455','监控摄像头 高清夜视红外无线WiFi一体机家用网络手机远程监控器','http://img.alicdn.com/bao/uploaded/i4/TB1f4EERXXXXXahXFXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=550548880455','三派旗舰店','109.39','185','30.5','34.57','三派旗舰店','https://s.click.taobao.com/JOthLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DLs9JrhXmE4YcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqPkWZNjOK2COmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5kaDU9uDt6FZp%2Be5yKYnXGPVDF%2F1aCUkaF74tjJ4TzvAMm%2Bd4ED4x8k7TITN6%2BPF6DkwOf9BUkNBdgfhRTsq0RHjkiHGkD2IysYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥5UxdZBg0ggE￥','10000','9921','满100元减5元','2017-06-22','2017-07-31','https://uland.taobao.com/coupon/edetail?e=xWdfSY4mFY%2FzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctfsynsEPUD%2FETv0djSSVj0uf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥keR0ZBg0STs￥','https://s.click.taobao.com/ScqhLhw',NULL,NULL,'1') [ RunTime:0.0016s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','521334371608','创意变色LED书本灯 便携充电折纸书灯卧室装饰折叠台灯床头小夜灯','http://img.alicdn.com/bao/uploaded/i4/TB1XbGPOFXXXXXBaXXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=521334371608','聚百易家居专营店','69','127','10.5','14.15','聚百易家居专营店','https://s.click.taobao.com/TdthLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3D0bU%2F4xDxDSUcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5pfF5FGrkSN0RnQeqgiNBs4FMyqBgdwssY5XhYdLedl0Mm%2Bd4ED4x8nFkAn2H3pcDHzobjzPi60rKw%2FFD527BiA4jgOPCcVrv8Yl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥SApOZBg0hnY￥','10000','9184','满69元减3元','2017-06-08','2017-08-08','https://uland.taobao.com/coupon/edetail?e=Ichqz15vx5zzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctJafmnZj2cyl1WvFrepTeuuf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥ktajZBg0hFZ￥','https://s.click.taobao.com/i3nhLhw',NULL,NULL,'1') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','547982128149','幻影简约实木穿衣镜旋转全身镜子化妆镜落地无框试衣镜衣帽移动镜','http://img.alicdn.com/bao/uploaded/i3/3214541480/TB272RCr4RDOuFjSZFzXXcIipXa_!!3214541480.jpg','http://item.taobao.com/item.htm?id=547982128149','幻影家居工厂店','389','434','3','41.23','幻影家居工厂店','https://s.click.taobao.com/DSwhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DI7IrjrgLzQ8cQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5vIUBf6BUROr9gk18P4VEM%2BqUKcSQOzamhGX1FzPLBUsfBL5LlYL98ne1EtDr5u0hCn4wr%2B2ybfF1iCK9P41eV2CCfDaJUllVaJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥ozbsZBg055D￥','10000','9929','满300元减30元','2017-06-24','2017-06-30','https://uland.taobao.com/coupon/edetail?e=%2FcCynNtSUJ7zX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctIMjcdMaDDl833YXyvNfFXuf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥GpGmZBg0gmE￥','https://s.click.taobao.com/sJohLhw',NULL,NULL,'1') [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','45706992725','吉斯特 蹲便器盖板 蹲坑盖蹲厕盖板加厚蹲便器防臭器厕所便池防滑','http://img.alicdn.com/bao/uploaded/i4/TB1MjaeRVXXXXXOXFXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=45706992725','joosoit吉斯特旗舰店','68','1739','8','22.1','joosoit吉斯特旗舰店','https://s.click.taobao.com/OAvhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DRyQgPGByJ5kcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5sW%2Fq9Gz2zrOO8Ic9OqYNw%2Flu3gbJcjQXp1SIN6njRw3Mm%2Bd4ED4x8neFeaNwvIdag98Xba649%2BTmyyHDZhNbJooSnD3sYYrs6Jn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥51hpZBg0UG2￥','20000','17572','2元无条件券','2017-04-21','2017-10-21','https://uland.taobao.com/coupon/edetail?e=LEaMkFoCJ7jzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bct1ZHbU7QIPUwt%2Bht5N%2BINGbc9yU8cAwci2t0uovksDuG1hCdiW%2FHqxuYZyEhUTFjq5P1Dc%2B10pvSPaEywAJnnsKJ7%2BkHL3AEW&pid=mm_44012812_29486138_109576309&af=1','￥sMNpZBg076r￥','https://s.click.taobao.com/MAvhLhw',NULL,NULL,'1') [ RunTime:0.0021s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','546573653784','德国304不锈钢水槽大单槽 厨房洗菜盆水槽 加厚台下盆洗碗池套餐','http://img.alicdn.com/bao/uploaded/i2/189236127/TB2WmcuqItnpuFjSZFKXXalFFXa_!!189236127.jpg','http://item.taobao.com/item.htm?id=546573653784','南粤厨卫家居馆','95','219','17.1','21','球球猴猴','https://s.click.taobao.com/msthLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3D6NrT4pM3iiwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5ihOq0rnIPRkJwFTmHHf2nmCnlCYbvYqkL7y1a2Xg729h9TbKRs8zk4q8DmKey6l0R%2F2kM1eawQjI29udwXO6zEmrKR%2FC9zTng%3D%3D&pvid=11_117.158.25.204_659_1498560134947','￥Y6VqZBg0TNn￥','10000','9708','满90元减5元','2017-06-09','2017-10-31','https://uland.taobao.com/coupon/edetail?e=hkSW4D2zw5%2FzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctxluSjRKPTGVS0KTgMG4Gd%2Bf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥wQnnZBg0h13￥','https://s.click.taobao.com/ASwhLhw',NULL,NULL,'1') [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','542981068644','厨房置物架简易书架楠竹组合多层浴室客厅卫生间落地实木简易架子','http://img.alicdn.com/bao/uploaded/i3/TB12tPdRpXXXXXDapXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=542981068644','艾芮特旗舰店','55','779','22.5','12.65','艾芮特旗舰店','https://s.click.taobao.com/VXmhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DgA%2BYq5jF31gcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5qndfZu7W%2BKWNyi%2BTcTXGLiyOiQYGZi9cHZlZWRBlCckMm%2Bd4ED4x8kWG2ZPNGCjsTkwOf9BUkNBaN6dQe3S0cdRHa%2BE3lU268Yl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥EitaZBg07nF￥','10000','6715','满30元减3元','2017-05-24','2017-08-31','https://uland.taobao.com/coupon/edetail?e=3GafXvVwyhXzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctDk7i5AkS0Oxl512%2B5Yjv1uf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥4BiOZBg0TTH￥','https://s.click.taobao.com/NcqhLhw',NULL,NULL,'1') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','548904037599','LED吸顶灯 长方形客厅灯简约现代卧室灯儿童房灯餐厅过道阳台灯具','http://img.alicdn.com/bao/uploaded/i4/TB142BLRFXXXXb4apXXXXXXXXXX_!!0-item_pic.jpg','http://item.taobao.com/item.htm?id=548904037599','巨亿旗舰店','159','2723','15.5','49.29','巨亿旗舰店','https://s.click.taobao.com/jfuhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DXgxeiqGOr9kcQipKwQzePOeEDrYVVa64K7Vc7tFgwiG3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5irmdu45k6XPdC0NzSroqL8PgDO3FocwZFgeEHLve3klMm%2Bd4ED4x8mNpL6PhN%2FpKWe4F5BTRsFISwyhgHvDoeeB9%2BJ9BiDdycYl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥21fCZBg05gd￥','100000','95490','满120元减5元','2017-02-26','2017-08-26','https://uland.taobao.com/coupon/edetail?e=nxc%2FBPueSp3zX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctMW5fV3y3pcNwQs0m2t91gef5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥uawZZBg07nx￥','https://s.click.taobao.com/WvuhLhw',NULL,NULL,'1') [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','543842214260','大学生led护眼台灯宿舍寝室神器学习阅读书桌可充电酷毙灯USB灯管','http://img.alicdn.com/bao/uploaded/i2/739671293/TB2uHlNiJhvOuFjSZFBXXcZgFXa_!!739671293.jpg','http://item.taobao.com/item.htm?id=543842214260','亿家生活馆','12.8','1715','1.5','1.92','李世远2011','https://s.click.taobao.com/TaohLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DKeJJ7pzAkjIcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5nMT3FeK2cAxvi9TMU1gYxZW%2BeHLrcQQNK6DGC8EylCNfBL5LlYL98kMoji7KvshppjXNOblJxCvEiIlAObGx4BthhS4KHAQSqJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥REiYZBg0SNB￥','10000','9903','满10元减3元','2017-06-26','2017-07-02','https://uland.taobao.com/coupon/edetail?e=c%2BqHjlss9sLzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctywF%2B6bgPkEC6WU%2B%2B%2BNfXAef5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥SrmyZBg06hK￥','https://s.click.taobao.com/ifuhLhw',NULL,NULL,'1') [ RunTime:0.0015s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','546869626621','304不锈钢厨房置物架墙上悬挂式微波炉架 壁挂烤箱架电饭煲架隔板','http://img.alicdn.com/bao/uploaded/i1/2790082896/TB2.xiGh4dkpuFjy0FbXXaNnpXa_!!2790082896.jpg','http://item.taobao.com/item.htm?id=546869626621','越煌家居厂家内部店','158.4','43','15','39.76','先锋工作室001','https://s.click.taobao.com/5ExhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3DH%2F0NSuz6jnwcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5ttTPe8b8Yn9JOpozhfyxriP8cLozhN%2B6ic5Xrq0UGBSMm%2Bd4ED4x8ljxXYBV%2FUAVltINICxavaOL9yn8axb%2Fo5rxgbAT24Z38Yl7w3%2FA2kb&pvid=11_117.158.25.204_659_1498560134947','￥lFT9ZBg06nT￥','1000','920','满68元减3元','2017-06-18','2017-06-30','https://uland.taobao.com/coupon/edetail?e=tAnsoVzLtxbzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2BctY3QP5Lk9nnpum7sNtKcrT%2Bf5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥PU5iZBg0S6i￥','https://s.click.taobao.com/MdthLhw',NULL,NULL,'1') [ RunTime:0.0018s ]
+NOTIC: [8] Undefined offset: 21 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 113 行.
+NOTIC: [8] Undefined offset: 22 D:\wamp64\www\taobaoke\app\Admin\Controller\TaoController.class.php 第 114 行.
+SQL: INSERT INTO `tao` (`add_time`,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_detail`,`shop_name`,`goods_price`,`goods_sell`,`income`,`commission`,`seller_name`,`tao_link`,`tao_link2`,`tao_word`,`coupon_number`,`coupon_rest`,`coupon_denomination`,`start_time`,`end_time`,`coupon_link2`,`coupon_word`,`coupon_link`,`is_marketing`,`plan`,`cate`) VALUES ('1498560418','548707945826','小夜灯遥控卧室床头灯节能可调光婴儿护眼插电LED喂奶光控夜灯','http://img.alicdn.com/bao/uploaded/i3/853121262/TB2VoOCrwxlpuFjSszbXXcSVpXa_!!853121262.jpg','http://item.taobao.com/item.htm?id=548707945826','多艺灯饰','16.9','2219','20','3.4','中山市古镇多艺灯饰','https://s.click.taobao.com/gLrhLhw','https://s.click.taobao.com/t?e=m%3D2%26s%3D5IWjmuZlrGkcQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XK3bLqV5UHdqRoWuceCKnJqNIp4fcwrAVmmwl2poD%2F5T6ePBussqTFIRDuH5RpTt%2FnzU5n60DmK5tpGxAB9RzeWWC9rYLCPgRsTLVGnPE7VhSZTLxz5Y%2BHMfBL5LlYL98mlxdFs8XsLCTrscjci7sbxkGPMrJfB%2B7zgkwet5nf7lqJn5AyUbPoV&pvid=11_117.158.25.204_659_1498560134947','￥6kulZBg0hhO￥','2000','1050','满16元减3元','2017-06-23','2017-06-29','https://uland.taobao.com/coupon/edetail?e=aB1UQtdNirbzX1yJ4zwwtjAV1NHA5kWz%2BnUgEOaK%2BYhsB1%2BXEndRdHErMzF%2Fn%2Bcted1WM8UWMUphCb59BSTygef5wOtmCV%2Bcl1Q3Ie0eoka3B5b%2By7vIbMFNSAfotNQNaOkNckkFLHePoSzex0%2Fr49tN7m9cS4TU&pid=mm_44012812_29486138_109576309&af=1','￥7YG6ZBg05g6￥','https://s.click.taobao.com/BhvhLhw',NULL,NULL,'1') [ RunTime:0.0025s ]
+
+[ 2017-06-27T18:47:03+08:00 ] 127.0.0.1 /taobaoke/admin/tao/tao_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+SQL: SHOW COLUMNS FROM `w_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002384s ]
+

@@ -1,0 +1,2018 @@
+[ 2017-07-04T09:26:17+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002120s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0015s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001839s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002709s ]
+
+[ 2017-07-04T09:27:11+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002469s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.439277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.439762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002480s ]
+
+[ 2017-07-04T09:27:19+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000280s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002366s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007464s ]
+
+[ 2017-07-04T09:27:37+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001634s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003506s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004062s ]
+
+[ 2017-07-04T09:28:17+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002396s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2017-07-04T09:28:34+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001963s ]
+
+[ 2017-07-04T09:29:10+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0017s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001603s ]
+
+[ 2017-07-04T09:29:13+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002096s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000741s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001586s ]
+
+[ 2017-07-04T09:29:36+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001603s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0029s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001453s ]
+
+[ 2017-07-04T09:30:04+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002034s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002749s ]
+
+[ 2017-07-04T09:30:53+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000150s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004183s ]
+
+[ 2017-07-04T09:31:36+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043975s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002539s ]
+
+[ 2017-07-04T09:31:49+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001980s ]
+
+[ 2017-07-04T09:32:00+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0017s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001612s ]
+
+[ 2017-07-04T09:32:31+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002514s ]
+
+[ 2017-07-04T09:32:59+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001485s ]
+
+[ 2017-07-04T09:33:17+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2017-07-04T09:33:46+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001593s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001932s ]
+
+[ 2017-07-04T09:34:22+08:00 ] 192.168.120.68 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001584s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002244s ]
+
+[ 2017-07-04T09:35:34+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003677s ]
+
+[ 2017-07-04T09:36:02+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+
+[ 2017-07-04T09:36:13+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0015s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001706s ]
+
+[ 2017-07-04T09:36:19+08:00 ] 192.168.120.68 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003293s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2017-07-04T09:47:39+08:00 ] 192.168.120.68 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+
+[ 2017-07-04T10:41:01+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003818s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002058s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0026s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.378017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.378374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003068s ]
+
+[ 2017-07-04T10:46:09+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002315s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002502s ]
+
+[ 2017-07-04T10:55:17+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001465s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004644s ]
+
+[ 2017-07-04T10:55:28+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?uid=&search=%E5%AD%A6%E7%94%9F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001570s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%学生%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2017-07-04T10:57:34+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?uid=&search=%E5%AD%A6%E7%94%9F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004576s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%学生%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.493306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.493830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001436s ]
+
+[ 2017-07-04T10:59:17+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?uid=&search=%E5%AD%A6%E7%94%9F
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003361s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0022s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%学生%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002069s ]
+
+[ 2017-07-04T10:59:20+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002214s ]
+
+[ 2017-07-04T10:59:30+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?cate=women
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `slug` = 'women' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 118 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001596s ]
+
+[ 2017-07-04T10:59:34+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000869s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0016s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `slug` = 'women' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
+
+[ 2017-07-04T10:59:40+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001922s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 59 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 103 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003648s ]
+
+[ 2017-07-04T10:59:44+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001770s ]
+
+[ 2017-07-04T11:17:57+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002464s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0024s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.475509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.475894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002520s ]
+
+[ 2017-07-04T11:17:59+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000193s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002613s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002524s ]
+
+[ 2017-07-04T11:18:05+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002107s ]
+
+[ 2017-07-04T11:18:07+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001881s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0017s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001846s ]
+
+[ 2017-07-04T11:18:13+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003151s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002684s ]
+
+[ 2017-07-04T11:19:40+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003461s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0020s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003348s ]
+
+[ 2017-07-04T11:19:46+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000107s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 60 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 104 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002510s ]
+
+[ 2017-07-04T11:21:34+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000171s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.352835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.353231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002609s ]
+
+[ 2017-07-04T11:22:16+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002860s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0028s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.464172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.464645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007445s ]
+
+[ 2017-07-04T11:31:17+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002172s ]
+
+[ 2017-07-04T11:31:17+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0017s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 40,20   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001651s ]
+
+[ 2017-07-04T11:31:23+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 60,20   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001303s ]
+
+[ 2017-07-04T11:31:30+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 80,20   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2017-07-04T11:32:51+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003050s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.454817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.455074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2017-07-04T11:32:52+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3%E8%A3%85
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003660s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女装%' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002766s ]
+
+[ 2017-07-04T11:33:10+08:00 ] 192.168.120.81 /taobaoke/coupon/index.html?search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001874s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001474s ]
+
+[ 2017-07-04T11:33:14+08:00 ] 192.168.120.81 /taobaoke/coupon/get_page?uid=&search=%E5%A5%B3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `goods_name` LIKE '%女%' ORDER BY add_time desc LIMIT 20,20   [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2017-07-04T11:36:16+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 62 行.
+NOTIC: [8] Undefined index: cate D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 106 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003731s ]
+
+[ 2017-07-04T11:37:45+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=men
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' AND `slug` = 'men' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2017-07-04T11:37:49+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001807s ]
+
+[ 2017-07-04T11:41:19+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002098s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0027s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002485s ]
+
+[ 2017-07-04T11:43:20+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002718s ]
+
+[ 2017-07-04T11:44:42+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2017-07-04T11:45:45+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002159s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0013s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002203s ]
+
+[ 2017-07-04T11:46:40+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0012s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002056s ]
+
+[ 2017-07-04T11:46:51+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003879s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0019s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002235s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002893s ]
+
+[ 2017-07-04T11:48:55+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0014s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010269s ]
+
+[ 2017-07-04T11:49:17+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0018s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2017-07-04T11:50:22+08:00 ] 127.0.0.1 /taobaoke/coupon/index.html?cate=all
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tao` [ RunTime:0.0011s ]
+SQL: SELECT tao.id,`goods_id`,`goods_name`,`goods_thumbnail`,`goods_price`,`coupon_link`,`add_time`,`coupon_denomination`,`coupon_link2`,`tao_link2` FROM `tao` INNER JOIN tao_category on tao_category.uid=tao.cate  WHERE `end_time` >= '2017-07-04' ORDER BY add_time desc LIMIT 20   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tao_category` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tao_category`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 45 行.
+NOTIC: [8] Undefined index: search D:\wamp64\www\taobaoke\app\Runtime\Cache\5832229222fd0c74e0e07c652f2b28414fbfec97.file.index.tpl.php 第 121 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001533s ]
+
