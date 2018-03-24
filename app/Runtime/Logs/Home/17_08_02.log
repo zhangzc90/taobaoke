@@ -1,0 +1,30 @@
+[ 2017-08-02T15:14:01+08:00 ] 127.0.0.1 /taobaoke/topic/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+SQL: SHOW COLUMNS FROM `tao_users` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `tao_users` WHERE `uid` = '' AND `enable` = 1 LIMIT 1   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `w_options` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'basic_option' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `w_post` [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: p D:\wamp64\www\taobaoke\app\Home\Controller\TopicController.class.php 第 49 行.
+NOTIC: [8] Undefined variable: join D:\wamp64\www\taobaoke\app\Home\Controller\TopicController.class.php 第 49 行.
+SQL: SELECT w_post.ID as id,`post_date`,`post_title`,`post_thumbnail`,`post_describe`,`post_seqencing`,`user_nickname`,`post_status`,w_users.ID as userid FROM `w_post` INNER JOIN w_users on w_users.ID=w_post.post_author  WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' ORDER BY post_seqencing desc,post_date desc LIMIT 0,5   [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `w_post` WHERE `post_type_delete` = 'open' AND `post_status` = 'publish' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\taobaoke\app\Home\Controller\TopicController.class.php 第 100 行.
+SQL: SHOW COLUMNS FROM `w_term_relationship` [ RunTime:0.0087s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '4' AND `tag_or_category` = 'category'  [ RunTime:0.0082s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '4' AND `tag_or_category` = 'tag'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `w_options` WHERE `option_name` = 'date_format' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: ID D:\wamp64\www\taobaoke\app\Home\Controller\TopicController.class.php 第 100 行.
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '1' AND `tag_or_category` = 'category'  [ RunTime:0.0007s ]
+SQL: SELECT `term_id`,`name`,`term_taxonomy` FROM `w_term_relationship` join w_term on w_term.term_id=w_term_relationship.term_taxonomy_id  WHERE `object_id` = '1' AND `tag_or_category` = 'tag'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `w_term` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `w_term` WHERE `term_taxonomy` = 'category'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `w_term` WHERE `term_taxonomy` = 'post_tag'  [ RunTime:0.0006s ]
+ERR: 模板不存在:./Theme/default/Topic/index.tpl
+

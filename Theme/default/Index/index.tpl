@@ -1,4 +1,4 @@
-{include file='../tpl/header.tpl' title='淘宝严选'}
+{include file='../tpl/header.tpl' title='好物严选'}
 <link rel="stylesheet" type="text/css" href="{$smarty.const.THEME}assets/css/index.css">
 <div class='container'>
 	<div class='search'>
